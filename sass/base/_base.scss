@@ -1,0 +1,49 @@
+html {
+    font-size: 10px;
+}
+
+body {
+    margin: 0;
+    @extend %font-prim;
+    @include font($size: 1.6rem, $height: 2.6rem, $weight: 500);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+section,
+main,
+footer,
+header,
+article {
+    display: block;
+}
+
+h1 {
+    @extend %font-add;
+    @include font(4.4rem, 5.4rem)
+}
+
+h2 {
+    @include font(3.6rem, 5.4rem);
+    text-align: center;
+}
+
+h3 {
+    @include font(2.4rem, 3.4rem)
+}
+
+h4 {
+    @include font(2.2rem, 3.3rem, 600)
+}
+
+h5 {
+    @include font(1.6rem, 2.6rem, 600)
+}
+
+.block_shadowed {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+    // margin-bottom: 30px;
+}

@@ -1,18 +1,43 @@
 .footer {
     padding: 60px 0 70px;
+
+    @include media-mobile {
+        padding: 31px 0;
+
+    }
 }
 
 .footer__wrapper {
     display: flex;
+
+
+    @include media-tablet {
+        flex-direction: column;
+    }
 }
+
 
 .footer_navigation {
     flex-grow: 1;
     padding-left: 152px;
+
+    @include media-tablet {
+        padding-left: 0;
+        margin-top: 27px;
+    }
+
+    @include media-mobile {
+        flex-direction: column;
+    }
+
 }
 
 .footer_navigation__title {
     margin: 0 0 15px;
+
+    @include media-mobile {
+        margin-top: 18px;
+    }
 }
 
 .footer_navigation__links {
@@ -47,6 +72,7 @@
         &:focus {
             border-color: $color-additional;
             outline: none;
+            background: $color-hover-background;
         }
     }
 }

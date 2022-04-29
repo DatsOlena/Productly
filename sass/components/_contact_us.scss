@@ -1,7 +1,31 @@
 .contact_us {
     background: $color-background;
-    padding: 62px 82px;
+    padding: 62px 0;
+
+    @include media-tablet {
+        text-align: center;
+    }
 }
+
+.contact_us_container {
+    @include media-tablet {
+        flex-direction: column;
+    }
+
+    @include media-mobile {
+        flex-wrap: wrap;
+    }
+}
+
+.contact_us__content {
+    max-width: 520px;
+
+    @include media-tablet {
+        max-width: 100%;
+        margin-bottom: 52px;
+    }
+}
+
 
 .contact_us__form {
 
@@ -15,6 +39,7 @@
         &:focus {
             border-color: $color-primary;
             outline: none;
+            background: $color-hover-background;
         }
     }
 
@@ -27,26 +52,61 @@
 
 .contact_us__line {
     margin-top: 19px;
+
+    @include media-mobile {
+        flex-direction: column;
+        margin-bottom: 0;
+
+        >* {
+            margin-bottom: 19px;
+        }
+    }
 }
 
-.contact_us__buttom {
+.contact_us__button {
     >* {
         min-width: 117px;
-        margin-top: 19px;
+        margin-top: 20px;
     }
+
+    @include media-tablet {
+        margin-top: 26px;
+    }
+
+    @include media-mobile {
+        margin-top: 24px;
+    }
+
+
 }
 
 .contact_us__title {
     @include font(3.4rem, 4.6rem, 700);
     text-align: left;
     margin: 0 0 17px;
+
+    @include media-tablet {
+        text-align: center;
+    }
 }
 
 .contact_us__description {
     margin-bottom: 60px;
 }
 
+.contact_us__info {
+    display: flex;
+    align-items: center;
+
+    @include media-tablet {
+        justify-content: center;
+    }
+}
+
 .contact_us__phone,
 .contact_us__mail {
     padding-left: 10px;
+    text-decoration: none;
+    @include font ($size: 2.5rem, $height: 2.6rem, $weight: 400);
+    color: $color-text;
 }

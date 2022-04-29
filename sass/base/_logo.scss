@@ -1,11 +1,23 @@
+.logo {
+    display: flex;
+}
+
+.logo_object {
+    width: 160px;
+    height: 30px;
+}
+
 .logo_path {
     @extend %transition;
 }
 
 
+.logo_svg {
+    cursor: pointer;
 
-.logo_svg:hover {
-    .logo_path {
-        fill: $color-primary;
+    &:hover {
+        .logo_path {
+            fill: $color-primary;
+        }
     }
 }

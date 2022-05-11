@@ -221,31 +221,31 @@ h5 {
 }
 
 .ico_play {
-  background-image: url("../../img/icons/play.svg");
+  background-image: url("../../../src/img/icons/play.svg");
   width: 17px;
   height: 19px;
 }
 
 .ico_arrow {
-  background-image: url("../../img/icons/arrow.svg");
+  background-image: url("../../../src/img/icons/arrow.svg");
   width: 12px;
   height: 17px;
 }
 
 .ico_snake {
-  background-image: url("../../img/icons/snake.svg");
+  background-image: url("../../../src/img/icons/snake.svg");
   width: 18px;
   height: 14px;
 }
 
 .ico_heart {
-  background-image: url("../../img/icons/heart.svg");
+  background-image: url("../../../src/img/icons/heart.svg");
   width: 17px;
   height: 15px;
 }
 
 .ico_hourglass {
-  background-image: url("../../img/icons/hourglass.svg");
+  background-image: url("../../../src/img/icons/hourglass.svg");
   width: 15px;
   height: 17px;
 }
@@ -682,7 +682,7 @@ h5 {
 
 .tools__wrapper {
   padding-bottom: 90px;
-  background-image: url(../../img/backgrounds/additional.svg);
+  background-image: url(../../../src/img/backgrounds/additional.svg);
   background-position: center bottom;
   background-size: 100%;
   background-repeat: no-repeat;
@@ -721,6 +721,13 @@ h5 {
   margin-bottom: 70px;
 }
 
+@media (max-width: 414px) {
+  .tools__title {
+    margin-top: 49px;
+    margin-bottom: 43px;
+  }
+}
+
 .tools__button {
   margin-top: 60px;
   text-align: center;
@@ -737,7 +744,13 @@ h5 {
 }
 
 .tool_icon {
-  margin-bottom: 70px;
+  margin-bottom: 30px;
+}
+
+@media (max-width: 414px) {
+  .tool_icon {
+    margin-bottom: 8px;
+  }
 }
 
 .strategy_wrapper > * {

@@ -299,6 +299,38 @@ h5 {
   left: 0;
 }
 
+.tags {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.tags > * {
+  margin-right: 7px;
+}
+
+.tag {
+  border-radius: 90px;
+  padding: 0 14px;
+  font-size: 1.3rem;
+  line-height: 2.8rem;
+  font-weight: normal;
+  font-style: normal;
+}
+
+.tag_selected {
+  background-color: #FF9900;
+  color: #FFFFFF;
+}
+
+.tag_bordered {
+  border: 1px solid #D7D7D7;
+}
+
+.tag_colored {
+  background-color: #F5F5F5;
+}
+
 .wrapper {
   max-width: 1197px;
   margin: auto;
@@ -829,9 +861,12 @@ h5 {
   }
 }
 
+.strategies__tags {
+  margin-bottom: 21px;
+}
+
 .strategy__content {
-  margin-top: 25px;
-  padding-left: 10px;
+  padding: 24px 33px 26px;
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
